@@ -1,9 +1,16 @@
 [Ll]ibrary/
+[Ll]ogs/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+
+# IDE Support Files
+
+# JetBrains Rider
+.idea/
+Assets/Plugins/Editor/Jetbrains/
 
 # Visual Studio cache directory
 .vs/
