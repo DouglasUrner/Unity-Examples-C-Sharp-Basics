@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,7 +9,7 @@ public class PlayerController : MonoBehaviour
      * the class. They are called instance variables.
      */
     public float speed = 1.0f;
-    
+
     /*
      * The Start() function is called before the first frame update
      */
@@ -31,16 +30,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Unity clears the background for us.
-        
+
         // Read the horizontal movement keys (left & right arrows).
         var h = Input.GetAxisRaw("Horizontal");
-        
+
         // Counter pattern.
         var pos = transform.position;
         pos.x = pos.x + h * speed;
         transform.position = pos;
-        
+
         // Ditto with drawing the sprites.
     }
 }
-
